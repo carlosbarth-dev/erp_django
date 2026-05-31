@@ -210,3 +210,81 @@ Git e a ferramenta de versionamento.
 GitHub e o servico onde podemos guardar uma copia remota do repositorio.
 
 Isso ajuda a proteger o projeto contra perda local e facilita trabalhar em outros computadores no futuro.
+
+## Admin do Django
+
+O admin do Django e um painel pronto para cadastrar, editar e consultar dados do sistema.
+
+Ele e util no inicio do projeto porque permite testar models sem precisar criar telas proprias ainda.
+
+Para um model aparecer no admin, ele precisa ser registrado em `admin.py`.
+
+Exemplo:
+
+```python
+admin.site.register(Cliente)
+```
+
+## Superuser
+
+Superuser e um usuario administrador do Django.
+
+Ele tem permissao para acessar o painel `/admin/` e gerenciar os dados cadastrados.
+
+Comando usado para criar:
+
+```powershell
+python manage.py createsuperuser
+```
+
+## ModelAdmin
+
+`ModelAdmin` permite personalizar como um model aparece no admin do Django.
+
+No app `clientes`, usamos isso para melhorar a lista de clientes com colunas, filtros e busca.
+
+Exemplos de configuracao:
+
+- `list_display`: define as colunas da lista.
+- `list_filter`: cria filtros laterais.
+- `search_fields`: define quais campos podem ser pesquisados.
+
+## ModelForm no admin
+
+`ModelForm` controla como um formulario ligado a um model aparece na tela.
+
+No admin de clientes, usamos um formulario personalizado para mudar detalhes visuais do campo `documento`, sem mudar o nome do campo no banco.
+
+Isso permitiu mostrar `CPF/CNPJ` para o usuario, mantendo `documento` no codigo.
+
+## Placeholder
+
+Placeholder e um texto discreto que aparece dentro de um campo vazio.
+
+Ele serve como dica rapida para quem esta preenchendo.
+
+No campo de documento, usamos:
+
+```text
+Somente numeros
+```
+
+Isso ajuda a lembrar que CPF e CNPJ devem ser digitados sem pontos, barras ou tracos.
+
+## git diff
+
+`git diff` mostra o que mudou nos arquivos antes do commit.
+
+Ele ajuda a revisar as alteracoes e evitar salvar algo sem perceber.
+
+Exemplo:
+
+```powershell
+git diff clientes/admin.py
+```
+
+## git push
+
+`git push` envia commits locais para o repositorio remoto no GitHub.
+
+Depois do push, outro computador pode receber essas mudancas usando `git pull`.

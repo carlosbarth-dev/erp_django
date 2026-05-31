@@ -210,3 +210,45 @@ README.md
 `.gitignore` evita versionar arquivos locais, ambiente virtual e banco SQLite.
 
 `README.md` explica o objetivo e o estado inicial do projeto.
+
+## Usar o admin do Django no inicio
+
+Decidimos usar o painel administrativo do Django como primeira forma de cadastrar e testar clientes.
+
+Motivo:
+
+- o admin ja vem pronto no Django;
+- permite testar o model `Cliente` sem criar telas proprias agora;
+- ajuda a validar se banco, migrations e cadastro estao funcionando;
+- evita criar interface antes de termos a base do modulo bem entendida.
+
+Essa escolha nao substitui uma interface propria no futuro. Ela apenas ajuda no desenvolvimento inicial.
+
+## Mostrar documento como CPF/CNPJ no admin
+
+Decidimos manter o campo tecnico como:
+
+```text
+documento
+```
+
+Mas mostrar no admin como:
+
+```text
+CPF/CNPJ
+```
+
+Tambem adicionamos placeholder:
+
+```text
+Somente numeros
+```
+
+Motivo:
+
+- `documento` continua sendo um nome simples e flexivel no codigo;
+- `CPF/CNPJ` fica mais claro para quem esta cadastrando;
+- o placeholder orienta sem deixar a tela muito poluida;
+- ainda nao precisamos usar JavaScript para mudar o campo dinamicamente.
+
+Validacoes mais avancadas de CPF e CNPJ ficam para uma etapa futura.
