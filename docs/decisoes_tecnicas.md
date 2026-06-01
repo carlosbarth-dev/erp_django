@@ -252,3 +252,20 @@ Motivo:
 - ainda nao precisamos usar JavaScript para mudar o campo dinamicamente.
 
 Validacoes mais avancadas de CPF e CNPJ ficam para uma etapa futura.
+
+## Validar documento no admin de clientes
+
+Decidimos adicionar uma validacao simples no formulario do admin de clientes.
+
+Regras atuais:
+
+- pessoa fisica deve informar 11 numeros;
+- pessoa juridica deve informar 14 numeros;
+- documento deve conter somente numeros.
+
+Motivo:
+
+- evita salvar dados claramente incorretos;
+- mantem a regra simples para esta fase do projeto;
+- nao adiciona biblioteca externa ainda;
+- deixa validacoes completas de CPF e CNPJ para uma etapa futura.

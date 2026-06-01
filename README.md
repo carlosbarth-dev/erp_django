@@ -22,6 +22,8 @@ Modulos iniciais planejados:
 - App `clientes` criado e registrado.
 - Model `Cliente` criado.
 - Primeira migration de `clientes` aplicada.
+- Admin de clientes configurado para cadastro, busca e filtros.
+- Validacao simples de CPF/CNPJ no admin de clientes.
 - Documentacao inicial criada na pasta `docs`.
 
 ## Tecnologias

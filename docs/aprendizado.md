@@ -257,6 +257,47 @@ No admin de clientes, usamos um formulario personalizado para mudar detalhes vis
 
 Isso permitiu mostrar `CPF/CNPJ` para o usuario, mantendo `documento` no codigo.
 
+## cleaned_data
+
+`cleaned_data` e um dicionario com os dados que vieram do formulario depois de uma primeira verificacao do Django.
+
+Exemplo conceitual:
+
+```python
+self.cleaned_data = {
+    'tipo_pessoa': 'FISICA',
+    'documento': '12345678900',
+}
+```
+
+Usamos `self.cleaned_data['documento']` quando o campo precisa existir.
+
+Usamos `self.cleaned_data.get('tipo_pessoa')` quando queremos buscar o valor sem quebrar o codigo caso ele nao exista.
+
+## ValidationError
+
+`ValidationError` e usado para avisar ao Django que um valor informado no formulario nao e valido.
+
+Quando levantamos esse erro, o Django nao salva o registro e mostra a mensagem para o usuario.
+
+Exemplo:
+
+```python
+raise ValidationError('CPF deve ter 11 numeros.')
+```
+
+## clean_documento
+
+`clean_documento` e um metodo de validacao especifico para o campo `documento`.
+
+No admin de clientes, usamos esse metodo para garantir regras simples:
+
+- Pessoa fisica deve ter documento com 11 numeros.
+- Pessoa juridica deve ter documento com 14 numeros.
+- O documento deve ter somente numeros.
+
+Esse metodo precisa ficar dentro da classe do formulario, mas fora da classe `Meta`.
+
 ## Placeholder
 
 Placeholder e um texto discreto que aparece dentro de um campo vazio.
