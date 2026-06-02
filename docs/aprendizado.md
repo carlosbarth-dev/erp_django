@@ -329,3 +329,77 @@ git diff clientes/admin.py
 `git push` envia commits locais para o repositorio remoto no GitHub.
 
 Depois do push, outro computador pode receber essas mudancas usando `git pull`.
+
+## Produto vendavel
+
+No modulo `produtos`, o model `Produto` representa um item que pode ser vendido ao cliente.
+
+Exemplos:
+
+- Laje H8
+- Manilha 60cm
+- Piso intertravado
+
+Neste momento, produto nao representa materia-prima, estoque, lote ou composicao de producao.
+
+Esses conceitos podem virar outros modulos no futuro.
+
+## Codigo do produto
+
+O campo `codigo` identifica o produto internamente.
+
+Exemplos:
+
+```text
+LAJ-H8
+MAN-060
+PIS-16-CIN
+```
+
+Ele foi criado como texto e com `unique=True`, porque codigos podem ter letras, tracos e zeros.
+
+## DecimalField
+
+`DecimalField` e usado para valores monetarios, como `preco_venda`.
+
+Ele e melhor para dinheiro do que campos de numero quebrado comum, porque trabalha com precisao decimal controlada.
+
+Exemplo:
+
+```python
+preco_venda = models.DecimalField(max_digits=10, decimal_places=2)
+```
+
+`max_digits=10` define o total maximo de digitos.
+
+`decimal_places=2` define duas casas decimais.
+
+## Unidade de medida
+
+O produto usa uma lista controlada de unidades de medida.
+
+Exemplos:
+
+- `UN`: Unidade
+- `M2`: Metro quadrado
+- `ML`: Metro linear
+- `M3`: Metro cubico
+
+Isso evita digitar unidades soltas de varias formas diferentes.
+
+## Erro no such table
+
+O erro:
+
+```text
+no such table: produtos_produto
+```
+
+significa que o Django conhece o model, mas a tabela ainda nao existe no banco.
+
+Normalmente acontece quando criamos ou alteramos um model e tentamos usar no admin antes de rodar:
+
+```powershell
+python manage.py makemigrations
+python manage.py migrate
+```

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Apps do projeto
     'clientes',
+    'produtos',
 ]
 
 MIDDLEWARE = [

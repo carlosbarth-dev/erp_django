@@ -269,3 +269,78 @@ Motivo:
 - mantem a regra simples para esta fase do projeto;
 - nao adiciona biblioteca externa ainda;
 - deixa validacoes completas de CPF e CNPJ para uma etapa futura.
+
+## Criar modulo produtos
+
+Decidimos criar o app `produtos` depois de fechar o primeiro ciclo do modulo `clientes`.
+
+Motivo:
+
+Pedidos futuramente dependem de dois cadastros basicos:
+
+```text
+cliente
+produto
+```
+
+Por isso, antes de criar pedidos, faz sentido permitir cadastrar produtos vendaveis.
+
+## Produto representa item vendavel
+
+Decidimos que `Produto` representa algo vendido ao cliente.
+
+Exemplos:
+
+```text
+Laje H8
+Manilha 60cm
+Piso intertravado
+Meio-fio de concreto
+```
+
+Motivo:
+
+Produto vendido, estoque, insumo, lote e producao sao conceitos relacionados, mas nao sao a mesma coisa.
+
+Nesta fase, evitamos colocar regras de estoque, materia-prima ou lote dentro do model `Produto`.
+
+## Produto com codigo interno
+
+Decidimos adicionar o campo:
+
+```python
+codigo = models.CharField(max_length=30, unique=True)
+```
+
+Motivo:
+
+- nomes de produtos podem ser parecidos;
+- codigo ajuda na busca e na rotina operacional;
+- codigo pode conter letras, numeros e tracos;
+- `unique=True` evita dois produtos com o mesmo codigo.
+
+## Ordenar produtos por codigo
+
+Decidimos ordenar produtos por `codigo`.
+
+Motivo:
+
+Em um ERP, codigo tende a ser mais estavel e mais operacional do que o nome.
+
+Exemplo:
+
+```text
+LAJ-H8
+MAN-060
+MAN-080
+```
+
+## Historico basico do admin
+
+Decidimos nao adicionar `criado_por` e `atualizado_por` agora.
+
+Motivo:
+
+O admin do Django ja registra historico basico de acoes feitas pelo painel administrativo, incluindo usuario, data e tipo de alteracao.
+
+Campos de auditoria no model podem ser uteis no futuro, mas devem ser pensados como um padrao para varios models, nao como uma decisao isolada no primeiro cadastro de produtos.

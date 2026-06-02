@@ -24,6 +24,9 @@ Modulos iniciais planejados:
 - Primeira migration de `clientes` aplicada.
 - Admin de clientes configurado para cadastro, busca e filtros.
 - Validacao simples de CPF/CNPJ no admin de clientes.
+- App `produtos` criado e registrado.
+- Model `Produto` criado para itens vendaveis.
+- Admin de produtos configurado para cadastro, busca e filtros.
 - Documentacao inicial criada na pasta `docs`.
 
 ## Tecnologias
