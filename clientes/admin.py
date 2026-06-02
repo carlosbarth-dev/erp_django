@@ -18,8 +18,11 @@ class ClienteAdminForm(forms.ModelForm):
         }
 
     def clean_documento(self):
-        documento = self.cleaned_data['documento']
+        documento = self.cleaned_data.get('documento')
         tipo_pessoa = self.cleaned_data.get('tipo_pessoa')
+
+        if not documento:
+            return documento
 
         if not documento.isdigit():
             raise ValidationError('Informe somente numeros.')
