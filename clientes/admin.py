@@ -40,4 +40,4 @@ class ClienteAdmin(admin.ModelAdmin):
     form = ClienteAdminForm
     list_display = ('nome', 'tipo_pessoa', 'documento', 'telefone', 'ativo')
     list_filter = ('tipo_pessoa', 'ativo')
-    search_fields = ('nome', 'documento', 'email')
+    search_fields = ('nome', 'documento', 'email', 'telefone', 'endereco', 'observacoes')

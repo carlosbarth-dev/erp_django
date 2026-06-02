@@ -1,0 +1,322 @@
+[
+  {
+    "model": "clientes.cliente",
+    "pk": 1,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Carlos Souza",
+      "documento": "12345678901",
+      "telefone": "65999990001",
+      "email": "carlos.exemplo@email.com",
+      "endereco": "Rua das Lajes, 100 - Cuiaba/MT",
+      "observacoes": "Prefere atendimento por WhatsApp. Costuma responder melhor no periodo da tarde.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 2,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Mariana Almeida",
+      "documento": "98765432100",
+      "telefone": "65999990002",
+      "email": "mariana.exemplo@email.com",
+      "endereco": "Avenida do Concreto, 250 - Varzea Grande/MT",
+      "observacoes": "Cliente pergunta bastante sobre prazo de entrega antes de fechar pedido.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 3,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Construtora Horizonte LTDA",
+      "documento": "11222333000181",
+      "telefone": "6533331000",
+      "email": "compras@horizonte.example",
+      "endereco": "Rua Projetada, 500 - Cuiaba/MT",
+      "observacoes": "Negociar sempre com o setor de compras. Pedidos costumam ser para obras pequenas.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 4,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Alfa Obras e Reformas LTDA",
+      "documento": "44555666000102",
+      "telefone": "6533332000",
+      "email": "financeiro@alfaobras.example",
+      "endereco": "Avenida Industrial, 900 - Cuiaba/MT",
+      "observacoes": "Financeiro centraliza pagamentos. Confirmar dados de cobranca antes de emitir pedido.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 5,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Residencial Sol Nascente SPE",
+      "documento": "77888999000155",
+      "telefone": "6533333000",
+      "email": "obra@solnascente.example",
+      "endereco": "Estrada Municipal, km 12 - Cuiaba/MT",
+      "observacoes": "Cliente inativo para testar filtro. Historico mantido para demonstracao.",
+      "ativo": false,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 6,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Joao Pereira",
+      "documento": "11122233344",
+      "telefone": "65988880001",
+      "email": "joao.pereira@example.com",
+      "endereco": "Rua das Manilhas, 45 - Cuiaba/MT",
+      "observacoes": "So atende telefone depois das 14h. Interessado em manilhas para propriedade rural.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 7,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Ana Martins",
+      "documento": "22233344455",
+      "telefone": "65988880002",
+      "email": "ana.martins@example.com",
+      "endereco": "Avenida das Obras, 700 - Cuiaba/MT",
+      "observacoes": "Prefere receber orcamentos por email. Ja comprou pisos intertravados.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 8,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "MRV Terraplenagem LTDA",
+      "documento": "12345000000190",
+      "telefone": "6532221100",
+      "email": "compras@mrvterraplenagem.example",
+      "endereco": "Distrito Industrial, Quadra 8 - Cuiaba/MT",
+      "observacoes": "Pode gerar pedidos recorrentes. Confirmar disponibilidade antes de prometer prazo.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 9,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Agro Vale Fazendas LTDA",
+      "documento": "99887766000110",
+      "telefone": "6532222200",
+      "email": "fazenda@agrovale.example",
+      "endereco": "Rodovia MT-010, km 35 - Zona Rural",
+      "observacoes": "Entrega em zona rural. Verificar acesso de caminhao antes de confirmar frete.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 10,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Condominio Parque das Aguas",
+      "documento": "55667788000133",
+      "telefone": "6532223300",
+      "email": "sindico@parquedasaguas.example",
+      "endereco": "Avenida Central, 1500 - Varzea Grande/MT",
+      "observacoes": "Cliente inativo. Usado para testar busca, filtros e manutencao de historico.",
+      "ativo": false,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 11,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Norte Sul Engenharia LTDA",
+      "documento": "10203040000166",
+      "telefone": "6532214400",
+      "email": "compras@nortesul.example",
+      "endereco": "Rua dos Engenheiros, 320 - Cuiaba/MT",
+      "observacoes": "Costuma solicitar orcamentos comparando lajes e pisos. Responder com prazo detalhado.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 12,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Roberto Lima",
+      "documento": "33344455566",
+      "telefone": "65988770003",
+      "email": "roberto.lima@example.com",
+      "endereco": "Rua Primavera, 80 - Chapada dos Guimaraes/MT",
+      "observacoes": "Atende somente no horario de almoco. Interessado em meio-fio e guia de jardim.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 13,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Delta Pavimentacao LTDA",
+      "documento": "66778899000144",
+      "telefone": "6532215500",
+      "email": "operacoes@deltapav.example",
+      "endereco": "Avenida dos Transportes, 410 - Varzea Grande/MT",
+      "observacoes": "Cliente com foco em pavimentacao. Pode demandar piso intertravado em maior volume.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 14,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Fernanda Rocha",
+      "documento": "44455566677",
+      "telefone": "65988770004",
+      "email": "fernanda.rocha@example.com",
+      "endereco": "Rua dos Ipês, 219 - Cuiaba/MT",
+      "observacoes": "Cliente pediu para ligar antes de qualquer entrega. Preferencia por contato via telefone.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 15,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Serrana Materiais de Construcao",
+      "documento": "22334455000170",
+      "telefone": "6532216600",
+      "email": "vendas@serrana.example",
+      "endereco": "Avenida Comercial, 950 - Cuiaba/MT",
+      "observacoes": "Possivel revendedor. Confirmar politica de desconto antes de fechar pedidos grandes.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 16,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "EcoDreno Solucoes Urbanas LTDA",
+      "documento": "33445566000188",
+      "telefone": "6532217700",
+      "email": "projetos@ecodreno.example",
+      "endereco": "Rua das Aguas, 600 - Cuiaba/MT",
+      "observacoes": "Interesse em canaletas, tubos e pecas para drenagem. Enviar catalogo quando existir.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 17,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Paulo Henrique",
+      "documento": "55566677788",
+      "telefone": "65988770005",
+      "email": "paulo.henrique@example.com",
+      "endereco": "Sitio Boa Vista, km 18 - Santo Antonio do Leverger/MT",
+      "observacoes": "Entrega em area rural. Confirmar rota e condicao da estrada em periodo de chuva.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 18,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Loteamento Nova Esperanca SPE",
+      "documento": "44556677000199",
+      "telefone": "6532218800",
+      "email": "engenharia@novaesperanca.example",
+      "endereco": "Avenida Projetada 2, s/n - Cuiaba/MT",
+      "observacoes": "Projeto em fase inicial. Pode demandar tubos, meio-fio e pavimentacao futuramente.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 19,
+    "fields": {
+      "tipo_pessoa": "FISICA",
+      "nome": "Luciana Ferreira",
+      "documento": "66677788899",
+      "telefone": "65988770006",
+      "email": "luciana.ferreira@example.com",
+      "endereco": "Rua das Acacias, 33 - Cuiaba/MT",
+      "observacoes": "Solicitou cotacao para reforma residencial. Retornar no fim da tarde.",
+      "ativo": false,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "clientes.cliente",
+    "pk": 20,
+    "fields": {
+      "tipo_pessoa": "JURIDICA",
+      "nome": "Pantanal Obras Publicas LTDA",
+      "documento": "55667788000144",
+      "telefone": "6532219900",
+      "email": "licitacoes@pantanalobras.example",
+      "endereco": "Rua Administrativa, 120 - Cuiaba/MT",
+      "observacoes": "Cliente voltado a obras publicas. Possivel necessidade de documentacao formal em pedidos.",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  }
+]

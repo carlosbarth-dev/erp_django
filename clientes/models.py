@@ -15,6 +15,7 @@ class Cliente(models.Model):
     telefone = models.CharField(max_length=20, blank=True)
     email = models.EmailField(blank=True)
     endereco = models.TextField(blank=True)
+    observacoes = models.TextField(blank=True)
     ativo = models.BooleanField(default=True)
     cadastrado_em = models.DateTimeField(auto_now_add=True)
     atualizado_em = models.DateTimeField(auto_now=True)

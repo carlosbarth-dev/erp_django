@@ -1,0 +1,422 @@
+[
+  {
+    "model": "produtos.produto",
+    "pk": 1,
+    "fields": {
+      "codigo": "LAJ-H8",
+      "nome": "Laje H8",
+      "descricao": "Laje trelicada H8 para uso residencial.",
+      "unidade_medida": "M2",
+      "preco_venda": "85.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 2,
+    "fields": {
+      "codigo": "LAJ-H12",
+      "nome": "Laje H12",
+      "descricao": "Laje trelicada H12 para maiores vaos.",
+      "unidade_medida": "M2",
+      "preco_venda": "105.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 3,
+    "fields": {
+      "codigo": "MAN-060",
+      "nome": "Manilha 60cm",
+      "descricao": "Manilha de concreto com diametro de 60cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "120.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 4,
+    "fields": {
+      "codigo": "MAN-080",
+      "nome": "Manilha 80cm",
+      "descricao": "Manilha de concreto com diametro de 80cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "180.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 5,
+    "fields": {
+      "codigo": "PIS-INT-CIN",
+      "nome": "Piso intertravado cinza",
+      "descricao": "Piso intertravado de concreto na cor cinza.",
+      "unidade_medida": "M2",
+      "preco_venda": "48.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 6,
+    "fields": {
+      "codigo": "MEI-FIO-100",
+      "nome": "Meio-fio 100cm",
+      "descricao": "Meio-fio de concreto com 100cm de comprimento.",
+      "unidade_medida": "UN",
+      "preco_venda": "32.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 7,
+    "fields": {
+      "codigo": "PIS-INT-VER",
+      "nome": "Piso intertravado vermelho",
+      "descricao": "Piso intertravado de concreto na cor vermelha.",
+      "unidade_medida": "M2",
+      "preco_venda": "55.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 8,
+    "fields": {
+      "codigo": "BLO-14",
+      "nome": "Bloco de concreto 14cm",
+      "descricao": "Bloco de concreto estrutural com largura de 14cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "4.80",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 9,
+    "fields": {
+      "codigo": "BLO-19",
+      "nome": "Bloco de concreto 19cm",
+      "descricao": "Bloco de concreto estrutural com largura de 19cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "6.20",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 10,
+    "fields": {
+      "codigo": "CAN-30",
+      "nome": "Canaleta de concreto 30cm",
+      "descricao": "Canaleta de concreto para drenagem.",
+      "unidade_medida": "UN",
+      "preco_venda": "42.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 11,
+    "fields": {
+      "codigo": "TUB-040",
+      "nome": "Tubo de concreto 40cm",
+      "descricao": "Tubo circular de concreto com diametro de 40cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "95.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 12,
+    "fields": {
+      "codigo": "TUB-100",
+      "nome": "Tubo de concreto 100cm",
+      "descricao": "Tubo circular de concreto com diametro de 100cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "310.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 13,
+    "fields": {
+      "codigo": "PAL-CON-120",
+      "nome": "Palanque de concreto 120cm",
+      "descricao": "Palanque de concreto para cercamento.",
+      "unidade_medida": "UN",
+      "preco_venda": "38.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 14,
+    "fields": {
+      "codigo": "GUIA-JARDIM",
+      "nome": "Guia de jardim",
+      "descricao": "Guia de concreto para acabamento de jardim.",
+      "unidade_medida": "ML",
+      "preco_venda": "22.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 15,
+    "fields": {
+      "codigo": "CON-USI-M3",
+      "nome": "Concreto usinado",
+      "descricao": "Concreto vendido por metro cubico para pequenas obras.",
+      "unidade_medida": "M3",
+      "preco_venda": "420.00",
+      "ativo": false,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 16,
+    "fields": {
+      "codigo": "LAJ-H16",
+      "nome": "Laje H16",
+      "descricao": "Laje trelicada H16 para maiores cargas.",
+      "unidade_medida": "M2",
+      "preco_venda": "128.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 17,
+    "fields": {
+      "codigo": "MAN-100",
+      "nome": "Manilha 100cm",
+      "descricao": "Manilha de concreto com diametro de 100cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "260.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 18,
+    "fields": {
+      "codigo": "PIS-PODOTATIL",
+      "nome": "Piso podotatil",
+      "descricao": "Piso de concreto podotatil para acessibilidade.",
+      "unidade_medida": "M2",
+      "preco_venda": "72.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 19,
+    "fields": {
+      "codigo": "BLO-VED-09",
+      "nome": "Bloco de vedacao 9cm",
+      "descricao": "Bloco de concreto para vedacao com largura de 9cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "3.90",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 20,
+    "fields": {
+      "codigo": "POSTE-CON-200",
+      "nome": "Poste de concreto 200cm",
+      "descricao": "Poste de concreto para cercamento com 200cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "68.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 21,
+    "fields": {
+      "codigo": "TAMPA-CX-40",
+      "nome": "Tampa de caixa 40x40",
+      "descricao": "Tampa de concreto para caixa de passagem 40x40cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "29.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 22,
+    "fields": {
+      "codigo": "TAMPA-CX-60",
+      "nome": "Tampa de caixa 60x60",
+      "descricao": "Tampa de concreto para caixa de passagem 60x60cm.",
+      "unidade_medida": "UN",
+      "preco_venda": "48.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 23,
+    "fields": {
+      "codigo": "CAIXA-PASS-60",
+      "nome": "Caixa de passagem 60cm",
+      "descricao": "Caixa de passagem de concreto para drenagem e instalacoes.",
+      "unidade_medida": "UN",
+      "preco_venda": "155.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 24,
+    "fields": {
+      "codigo": "BANCO-CON",
+      "nome": "Banco de concreto",
+      "descricao": "Banco de concreto para areas externas.",
+      "unidade_medida": "UN",
+      "preco_venda": "210.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 25,
+    "fields": {
+      "codigo": "VASO-CON-G",
+      "nome": "Vaso de concreto grande",
+      "descricao": "Vaso ornamental de concreto para jardim.",
+      "unidade_medida": "UN",
+      "preco_venda": "95.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 26,
+    "fields": {
+      "codigo": "ESCADA-DEGRAU",
+      "nome": "Degrau pre-moldado",
+      "descricao": "Degrau pre-moldado de concreto para escadas.",
+      "unidade_medida": "UN",
+      "preco_venda": "58.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 27,
+    "fields": {
+      "codigo": "PLACA-MURO",
+      "nome": "Placa de muro pre-moldado",
+      "descricao": "Placa de concreto para fechamento de muro pre-moldado.",
+      "unidade_medida": "UN",
+      "preco_venda": "74.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 28,
+    "fields": {
+      "codigo": "MOURAO-RETO",
+      "nome": "Mourao reto de concreto",
+      "descricao": "Mourao reto de concreto para cercas rurais.",
+      "unidade_medida": "UN",
+      "preco_venda": "52.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 29,
+    "fields": {
+      "codigo": "MOURAO-CURVO",
+      "nome": "Mourao curvo de concreto",
+      "descricao": "Mourao curvo de concreto para cercas com arame superior.",
+      "unidade_medida": "UN",
+      "preco_venda": "64.00",
+      "ativo": true,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  },
+  {
+    "model": "produtos.produto",
+    "pk": 30,
+    "fields": {
+      "codigo": "LAJ-DESAT",
+      "nome": "Laje desativada para teste",
+      "descricao": "Produto inativo usado para testar filtros no admin.",
+      "unidade_medida": "M2",
+      "preco_venda": "70.00",
+      "ativo": false,
+      "cadastrado_em": "2026-06-02T12:00:00-04:00",
+      "atualizado_em": "2026-06-02T12:00:00-04:00"
+    }
+  }
+]
