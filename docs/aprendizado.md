@@ -403,3 +403,73 @@ Normalmente acontece quando criamos ou alteramos um model e tentamos usar no adm
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+## ForeignKey
+
+`ForeignKey` cria uma relacao entre tabelas.
+
+No modulo `pedidos`, usamos `ForeignKey` para ligar:
+
+- `PedidoVenda` a `Cliente`;
+- `ItemPedidoVenda` a `PedidoVenda`;
+- `ItemPedidoVenda` a `Produto`.
+
+Exemplo conceitual:
+
+```text
+Cliente -> PedidoVenda -> ItemPedidoVenda -> Produto
+```
+
+## on_delete
+
+`on_delete` define o que acontece quando o registro relacionado e apagado.
+
+Usamos:
+
+```python
+on_delete=models.PROTECT
+```
+
+Quando nao queremos permitir apagar algo que ja tem historico.
+
+Exemplo: nao apagar cliente que ja tem pedido.
+
+Usamos:
+
+```python
+on_delete=models.CASCADE
+```
+
+Quando o registro dependente nao faz sentido sozinho.
+
+Exemplo: se um pedido for apagado, seus itens tambem sao apagados.
+
+## Inline no admin
+
+Inline permite editar registros relacionados dentro da mesma tela do admin.
+
+No admin de pedidos, usamos `ItemPedidoVendaInline` para cadastrar itens dentro de `PedidoVenda`.
+
+Assim, o pedido aparece como cabecalho, e os produtos entram como linhas do pedido.
+
+## Pedido de venda e item do pedido
+
+`PedidoVenda` e o cabecalho do pedido.
+
+Ele guarda:
+
+- numero do pedido;
+- cliente;
+- status;
+- observacoes;
+- datas de cadastro e atualizacao.
+
+`ItemPedidoVenda` guarda as linhas do pedido.
+
+Ele guarda:
+
+- produto;
+- quantidade;
+- preco unitario.
+
+Essa separacao permite que um pedido tenha varios produtos.

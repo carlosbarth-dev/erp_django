@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Produto(models.Model):
     class UnidadeMedida(models.TextChoices):
         UNIDADE = 'UN', 'Unidade'
@@ -18,9 +19,10 @@ class Produto(models.Model):
     ativo = models.BooleanField(default=True)
     cadastrado_em = models.DateTimeField(auto_now_add=True)
     atualizado_em = models.DateTimeField(auto_now=True)
+
     def __str__(self):
         return f'{self.codigo} - {self.nome}'
-    
+
     class Meta:
         ordering = ['codigo']
         verbose_name = 'Produto'

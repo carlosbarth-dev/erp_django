@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Apps do projeto
     'clientes',
     'produtos',
+    'pedidos',
 ]
 
 MIDDLEWARE = [

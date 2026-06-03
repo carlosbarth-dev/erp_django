@@ -27,6 +27,9 @@ Modulos iniciais planejados:
 - App `produtos` criado e registrado.
 - Model `Produto` criado para itens vendaveis.
 - Admin de produtos configurado para cadastro, busca e filtros.
+- App `pedidos` criado e registrado.
+- Models `PedidoVenda` e `ItemPedidoVenda` criados.
+- Admin de pedidos configurado com itens em linha.
 - Documentacao inicial criada na pasta `docs`.
 
 ## Tecnologias

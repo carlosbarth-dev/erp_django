@@ -344,3 +344,63 @@ Motivo:
 O admin do Django ja registra historico basico de acoes feitas pelo painel administrativo, incluindo usuario, data e tipo de alteracao.
 
 Campos de auditoria no model podem ser uteis no futuro, mas devem ser pensados como um padrao para varios models, nao como uma decisao isolada no primeiro cadastro de produtos.
+
+## Criar modulo pedidos
+
+Decidimos criar o app `pedidos` depois dos cadastros de clientes e produtos.
+
+Motivo:
+
+Pedido de venda depende de:
+
+```text
+cliente
+produto
+```
+
+Assim, fazia sentido construir primeiro os cadastros base.
+
+## Usar PedidoVenda em vez de Pedido
+
+Decidimos nomear o model como `PedidoVenda`.
+
+Motivo:
+
+No futuro o sistema pode ter outros tipos de pedido, como:
+
+- pedido de compra de materia-prima;
+- ordem de producao;
+- solicitacao interna.
+
+O nome `PedidoVenda` deixa claro que este model representa venda para cliente.
+
+## Separar PedidoVenda e ItemPedidoVenda
+
+Decidimos criar:
+
+```text
+PedidoVenda
+ItemPedidoVenda
+```
+
+Motivo:
+
+Um pedido pode ter varios produtos.
+
+`PedidoVenda` guarda o cabecalho do pedido.
+
+`ItemPedidoVenda` guarda cada linha de produto, quantidade e preco.
+
+## Numero do pedido de venda
+
+Decidimos criar o campo `numero_pedido` como identificador de negocio do pedido.
+
+Motivo:
+
+O `id` do banco e tecnico. O `numero_pedido` e melhor para conversas, admin, telas e documentos.
+
+Nesta primeira etapa, o numero sera preenchido manualmente.
+
+Proximo refinamento planejado:
+
+Criar uma sequencia propria para gerar automaticamente numeros de pedidos de venda.
