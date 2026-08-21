@@ -420,6 +420,55 @@ Exemplo conceitual:
 Cliente -> PedidoVenda -> ItemPedidoVenda -> Produto
 ```
 
+## Teste automatizado
+
+Teste automatizado e um codigo que verifica se uma regra do sistema continua funcionando.
+
+No projeto, usamos o `TestCase` do Django para criar testes dos models e dos formularios.
+
+Exemplo de comando:
+
+```powershell
+python manage.py test
+```
+
+Esse comando procura os testes dos apps e executa as verificacoes sem precisar cadastrar os dados manualmente no admin.
+
+O teste usa um banco temporario. Esse banco e criado no inicio da execucao e destruido no final, por isso os dados criados durante o teste nao alteram o banco local do projeto.
+
+## Assercoes
+
+Assercoes sao verificacoes feitas dentro de um teste.
+
+Exemplos usados no projeto:
+
+```python
+self.assertEqual(cliente.nome, 'Joao da Silva')
+self.assertFalse(formulario.is_valid())
+self.assertIn('CPF deve ter 11 numeros.', formulario.errors['documento'])
+```
+
+`assertEqual` compara dois valores.
+
+`assertFalse` verifica se um resultado e falso.
+
+`assertIn` verifica se um valor aparece dentro de uma colecao ou texto.
+
+## Testar regras depois de alterar
+
+Testes manuais no admin continuam uteis para verificar a experiencia de quem usa o sistema.
+
+Testes automatizados ajudam a repetir rapidamente regras importantes depois de alteracoes no codigo.
+
+O fluxo recomendado para este projeto e:
+
+```text
+implementar ou alterar uma regra
+adicionar ou ajustar o teste correspondente
+executar os testes
+registrar a etapa no Git
+```
+
 ## on_delete
 
 `on_delete` define o que acontece quando o registro relacionado e apagado.

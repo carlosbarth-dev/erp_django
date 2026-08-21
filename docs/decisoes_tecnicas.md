@@ -404,3 +404,21 @@ Nesta primeira etapa, o numero sera preenchido manualmente.
 Proximo refinamento planejado:
 
 Criar uma sequencia propria para gerar automaticamente numeros de pedidos de venda.
+
+## Criar testes junto com as regras
+
+Decidimos adicionar testes automatizados junto com as regras importantes de cada modulo.
+
+Motivos:
+
+- evita acumular testes para o fim do projeto;
+- permite verificar rapidamente se uma alteracao quebrou uma regra existente;
+- registra no codigo o comportamento esperado;
+- mantém os testes organizados por app;
+- preserva os testes manuais no admin para validar a experiencia de uso.
+
+Nesta fase, os testes cobrem apenas comportamentos que ja existem nos models e formularios.
+
+Regras futuras devem receber seus testes quando forem implementadas, sem antecipar regras que ainda nao foram decididas.
+
+Os testes usam o banco temporario do `TestCase`, para nao alterar o banco local de desenvolvimento.
